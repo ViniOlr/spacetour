@@ -1,0 +1,32 @@
+/* Classes auxiliares */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteudo { 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Aqui começa a estilização do header */
+header {
+    padding: 1rem;
+}
+header > .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+header nav.menu ul li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5rem;
+}
