@@ -113,3 +113,93 @@ footer.rodape small.creditos {
 footer.rodape small.creditos a {
     font-size: 1rem;
 }
+
+/* Aqui começa a estilização da página de contato */
+
+section.contato form {
+    max-width: 400px;
+    margin: 5rem auto;
+}
+section.contato form fieldset {
+    padding: 1rem;
+}
+section.contato form fieldset legend {
+    font-size: 2rem;
+}
+section.contato form fieldset .campo {
+    margin-bottom: 2.8rem;
+}
+
+section.contato form fieldset .campo:last-of-type {
+    margin-bottom: 0;
+}
+section.contato form fieldset .flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+section.contato form fieldset .w50 div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+section.contato form fieldset label {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+section.contato form fieldset input[type='text'],
+section.contato form fieldset input[type='email'] {
+    width: 100%;
+    height: 20px;
+    font-size: 1rem;
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+section.contato form fieldset input[type='text']:focus, 
+section.contato form fieldset input[type='email']:focus {
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+section.contato form fieldset input[type='date'] {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+}
+section.contato form fieldset select,
+section.contato form fieldset textarea {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+}
+section.contato form fieldset textarea {
+    height: 150px;
+    resize: vertical;
+}
+section.contato form fieldset input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+section.contato form fieldset input[type="submit"]:hover {
+    color: black;
+    background-color: white;
+}
+section.contato form fieldset label[for="cpf"] {
+    margin-bottom: 10px;
+}
