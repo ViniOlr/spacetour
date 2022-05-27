@@ -6,14 +6,33 @@
 }
 .conteudo { 
     width: 100%;
-    max-width: 1200px;
+    max-width: 1128px;
     margin: 0 auto;
     padding: 0 2%;
+}
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 12px;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    font-size: 12px;
 }
 
 /* Aqui começa a estilização do header */
 header {
-    padding: 1rem;
+    width: 100%;
+    height: 48px;
+    margin: 48px 0;
 }
 header > .conteudo {
     display: flex;
@@ -23,10 +42,74 @@ header > .conteudo {
 header nav.menu ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 24px;
+    margin-top: 12px;
+    font-size: 14px;
+    /* Aqui o senhor pediu para setar o font-size da "ul" e depois setar o font-size do "a", sendo que apenas tem o de texto, então não vi muito sentido */
 }
 header nav.menu ul li a {
+    color: #999;
+    font-size: 20px;
+}
+
+/* Aqui começa a estilização do banner */
+
+section.banner {
+    width: 100%;
+    /* height: 450px; Professor, este estilo quebrou meu layot, ent tirei ele =\ */
+    margin-bottom: 35px;
+    position: relative;
+}
+section.banner img {
+    width: 100%;
+}
+section.banner .box {
+    max-width: 650px; 
+    /* Professor, neste item o senhor pediu uma largura de 42.5px, ficou inviável pois quebrou todos os textos, ficou diferente do layout e além de ter ficado feio*/
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px 48px;
+}
+section.banner .box .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+section.banner .box h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+section.banner .box p {
+    font-size: 20px;
+    color: #fff;
+}
+section.banner .box a {
     text-decoration: none;
-    color: grey;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Aqui começa a estilização do rodape */
+
+footer.rodape {
+    width: 100%;
+    /* margin: 30px; Professor, este estilo estava dando overflow no site, ent coloquei só em cima e em baixo */
+    margin: 30px 0;
+    float: left;
+    font-size: 30px;
+}
+footer.rodape p {
+    margin-bottom: 0;
+}
+footer.rodape small.creditos {
+    font-size: 18px;
+}
+footer.rodape small.creditos a {
+    font-size: 1rem;
 }
